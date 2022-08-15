@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalong Money Managment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b59bd86588.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid main-container d-flex justify-content-between w-100 pe-0 p-0 m-0">
+        <div class="navbar-main-div">
+            <nav class="navbar  mt-5 pt-0">
+                <div class=" p-3 navbar-div ">
+                    <div class="expand-menu d-md-none d-block mt-0 mb-1 fs-1"> <button class="expand-menu-button p-0 border-0 text-white"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <a class="navbar-brand  d-block mb-3" href="#">
+                        <img src="./logo.jpg" alt="" srcset="" class="logo-img d-inline-block">
+                        <p class="h5 main-title text-white d-md-inline-block d-none fs-5 fw-bolder ">kalong</p>
+                    </a>
+                    <span class="navbar-text  text-white h5  m-0 p-0  mt-4 d-md-block d-none fs-6 fw-bolder">Daily
+                        use</span>
+                    <ul class="navbar-nav mb-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <i class="fa-solid fa-house me-1 p-1  rounded-3  active fs-6 icon"></i><span class="nav-link-text d-md-inline-block d-none">Overview</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="# "><i
+                                    class="fa-solid fa-right-left  me-1 p-1  rounded-3 fs-6 icon"></i><span
+                                    class="nav-link-text d-md-inline-block d-none">Transactions</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="#"><i
+                                    class="fa-solid fa-comment-dots  me-1 p-1  rounded-3 fs-6 icon"></i><span
+                                    class="nav-link-text d-md-inline-block d-none">messages</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="#"><i
+                                    class="fa-solid fa-chart-line  me-1 p-1  rounded-3 fs-6 icon"></i
+                                    class="nav-link-text"><span
+                                    class="nav-link-text d-md-inline-block d-none">Stats</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="# "><i
+                                    class="fa-solid fa-user  me-1 p-1  rounded-3 fs-6 icon"></i><span
+                                    class="nav-link-text d-md-inline-block d-none">Account</span></a>
+                        </li>
+                    </ul>
+
+                    <span class="navbar-text text-white h5 d-lg-inline-block m-0 p-0 d-md-inline-block d-none fs-6 fw-bolder">Others</span>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"><i
+                                    class="fa-solid fa-gear  me-1 p-1 rounded-3 fs-6 icon"></i><span
+                                    class="nav-link-text d-md-inline-block d-none">Setting</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="#"><i
+                                    class="fa-solid fa-arrow-right-from-bracket  me-1 p-1 rounded-3 fs-6 icon"></i><span
+                                    class="nav-link-text d-md-inline-block d-none">Log out</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <div class="container-fuild overview bg-white pb-5">
+            <div class="row mt-5 my-0 p-0 m-0 d-flex flex-row justify-content-between px-lg-0">
+                <div class="col-md-6 order-lg-first order-md-first order-last d-flex flex-column align-items-lg-start align-items-center  ps-lg-4 " id="header">
+                    <h5 class="fw-bold">Overview</h5>
+                    <p class="fw-light text-secondary">Manage your growth money</p>
+                </div>
+                <div class="col-md-6 order-lg-last  order-first d-flex justify-content-center justify-content-lg-end
+                flex-sm-row flex-column p-0 m-0 pe-lg-4 align-items-sm-center align-items-md-start align-items-end  rounded-4" id="search-avatar">
+                    <div class="input-group-sm  mb-sm-0 mb-2 d-flex rounded-pill" id="search-box">
+                        <input type="search" class="form-control-sm border-0 m-0 p-0 d-sm-inline d-none rounded-4 " id="search-input" placeholder="Search report">
+                        <button class="py-1 px-2 d-flex border-0 h-100 rounded-circle" id="search-btn"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <img src="./male-avatar.jpg" alt="" srcset="" class="avatar-img rounded-circle mx-1
+                    ">
+                </div>
+            </div>
+            <div class="row karts d-flex justify-content-between mx-0">
+                <div class=" col-sm-12  col-md-6 col-lg-4 d-flex justify-content-center mb-3">
+                    <div class="kart m-1 p-0 rounded-5 position-relative h-100 w-100" id="visa">
+                        <div class="circle m-0 border-top-0 border-start-0 d-inline-block ">
+                            <img class="m-2" src="./visa.jpg" alt="" srcset="">
+
+                            <div class="visa-num position-absolute"> <i class="fa-solid fa-ellipsis  text-white ms-3 d-inline-block position-relative fs-4 me-1"></i>
+                                <p class="d-inline
+                                text-white fw-bold fs-5">2208 1906</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="ms-3 mt-3 m-0 p-0  text-white fs-6 fw-lighter">Dwayne John</p>
+                            <p class="ms-3 m-0 p-0 text-white fs-6 fw-lighter ">20/24</p>
+                        </div>
+                        <span class="visa-text text-white  position-absolute d-inline-block">visa</span>
+                        <div class=" bottom-circle position-absolute d-inline-block border-bottom-0 border-end-0 mb-0">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class=" col-sm-12  col-md-6   col-lg-4  d-flex justify-content-center mb-3">
+                    <div class="kart m-1 d-flex flex-column align-items-center h-100 w-100 p-0 rounded-5" id="balance">
+                        <div class="balance-title mt-2 fs-6">My Balance</div>
+                        <div class="balance-amount fs-4 mt-4">$90,050,00</div>
+                        <div class="balance-percentage m-1 mt-2 p-2 rounded-2">+22%</div>
+                    </div>
+                </div>
+                <div class=" col-sm-12 col-md-6  col-lg-4 d-flex justify-content-center  mb-sm-3">
+                    <div class="kart m-1 p-0 rounded-5 d-flex flex-column h-100 w-100" id="earned-spend-kart">
+                        <div class="circular-progress-bar justify-content-center align-self-center position-relative py-0 px-2 ">
+                            <svg class="position-relative" width="10rem" height="9rem">
+                                <circle class="position-relative " cx="60" cy="60" r="50" fill="none" width="10rem"
+                                    height="9rem" stroke-width="10" />
+                                <circle class="position-relative " cx="60" cy="60" r="50" fill="none" width="10rem"
+                                    height="9rem" stroke-width="20" />/>
+                            </svg>
+                            <div class=" progress-percent fs-6 fw-bold bg-white d-flex justify-content-center
+                                    position-absolute rounded-circle">
+                                <span>66%</span>
+                            </div>
+                        </div>
+                        <div class="spend-earn d-flex justify-content-between py-0 px-2">
+                            <div class=" d-flex justify-content-start">
+                                <div class="spend-color rounded-circle">
+                                </div>
+
+                                <p class="align-self-center pb-0 ps-1 mb-0 fs-6">spend</p>
+                            </div>
+                            <div class=" d-flex justify-content-end">
+
+
+                                <div class="earn-color rounded-circle">
+                                </div>
+                                <p class="align-self-center pb-0 ps-1 mb-0 fs-6">earn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0 p-0 w-100" id="revenue-transaction">
+                <div class=" col-lg-7 col-md-12 my-md-0 my-2 d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                    <div class="rounded-4 mt-2 rounded-4 mt-2" id="revenue">
+                        <div class="revenue-header">
+                            <h5 class="fw-bolder ">Revenue Past 6 Month</h5>
+                        </div>
+                        <div class="revenue-chart">
+                            <img src="./chart.jpg" alt="" srcset="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 my-md-0 my-3 d-flex justify-content-center justify-content-center  justify-content-lg-end justify-content-md-start">
+                    <div class="rounded-4 mt-lg-2 mt-md-4 rounded-4 mt-2" id="transaction">
+                        <h5 class="fw-bolder">Latest Transaction</h5>
+
+                        <div class="d-flex flex-row align-items-center justify-content-sm-between justify-content-start">
+                            <div class="d-flex align-items-center">
+                                <div class="icons-div align-self-center d-flex justify-content-center align-items-center rounded-3 m-2">
+                                    <i class="fa-brands fa-spotify fs-4 spotify-icon"></i>
+                                </div>
+                                <div class="spotify-info d-sm-inline-block d-none">
+                                    <p class="my-0 ">Spotify Pro</p>
+                                    <p class="my-0 ">12 jan</p>
+                                </div>
+                            </div>
+                            <div class="spotify-profit-loss text-danger align-self-end">
+                                <p>-$12,00</p>
+                            </div>
+                        </div>
+
+                        <div class=" d-flex flex-row align-items-center justify-content-sm-between justify-content-start">
+                            <div class="d-flex align-items-center">
+                                <div class="icons-div align-self-center d-flex justify-content-center align-items-center rounded-3 m-2">
+                                    <div class="bca-transfer-icon d-flex justify-content-center align-items-center rounded-circle text-white fs-6">
+                                        <i class="fa-solid fa-down-long "></i>
+                                    </div>
+                                </div>
+                                <div class="bca-info d-sm-inline-block d-none">
+                                    <p class="my-0">Top Up BCA</p>
+                                    <p class="my-0 ">12 jan</p>
+                                </div>
+                            </div>
+                            <div class=".bca-transfer-profit-loss align-self-end">
+                                <p>+$120,00</p>
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex flex-row align-items-center justify-content-sm-between justify-content-start">
+                            <div class="d-flex align-items-center">
+                                <div class="icons-div align-self-center d-flex justify-content-center align-items-center rounded-3 m-2">
+                                    <div class="bca-transfer-icon d-flex justify-content-center align-items-center rounded-circle text-white fs-6">
+                                        <i class="fa-solid fa-right-left"></i>
+                                    </div>
+                                </div>
+                                <div class="transfer-info d-sm-inline-block d-none">
+                                    <p class="my-0">Transfer To @kangmush</p>
+                                    <p class="my-0 ">12 jan</p>
+                                </div>
+                            </div>
+
+                            <div class=".bca-transfer-profit-loss align-self-end">
+                                <p>+$1200,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

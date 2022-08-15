@@ -1,0 +1,215 @@
+@font-face {
+    font-family: mainFont;
+    src: url(Chilanka-Regular.ttf);
+}
+
+body {
+    font-family: mainFont;
+}
+
+.main-container {
+    min-height: 100vh;
+}
+
+.main-container,
+#visa {
+    background: linear-gradient(#3b56f0, #6329de);
+}
+
+.main-container .overview {
+    border-bottom-left-radius: 7%;
+    border-top-left-radius: 7%;
+    justify-self: flex-end;
+    width: 80%;
+}
+
+.nav-link {
+    font-size: 0.75em;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+    font-weight: bold;
+    color: white;
+}
+
+.icon {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.icon:hover,
+.icon:active,
+.icon:focus {
+    background: white;
+    color: #3b56f0;
+}
+
+.expand-menu-button {
+    background: none;
+}
+
+#search-avatar {
+    height: 5rem;
+}
+
+#search-avatar #search-box {
+    background: rgba(229, 229, 229, 0.3);
+    height: 35%;
+}
+
+#search-avatar #search-input {
+    outline: none;
+    background: transparent;
+}
+
+#search-avatar #search-input::placeholder {
+    padding-left: 5%;
+}
+
+#search-avatar .avatar-img {
+    width: 2rem;
+    height: 2rem;
+    background: center/cover no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 20px 8px;
+}
+
+.kart {
+    background-color: #f8f9fd;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -7px;
+}
+
+.balance,
+.earned-spend {
+    background: #f8f9fd;
+}
+
+#visa .circle {
+    width: 6rem;
+    height: 6rem;
+    border-bottom-right-radius: 100%;
+    background: transparent;
+    border: solid 15px rgba(255, 255, 255, 0.3);
+}
+
+#visa .bottom-circle {
+    right: 0;
+    bottom: 0;
+    width: 7rem;
+    height: 7rem;
+    border-top-left-radius: 100%;
+    background: transparent;
+    border: solid 15px rgba(255, 255, 255, 0.3);
+}
+
+#visa .visa-text {
+    top: 1.5rem;
+    right: 2rem;
+}
+
+#visa .visa-num {
+    top: 4rem;
+    width: 11rem;
+}
+
+.balance-amount {
+    color: #3547ac;
+}
+
+.balance-percentage {
+    height: 2.5rem;
+    width: 3.5rem;
+    color: #1ea03a;
+    background-color: rgba(165, 249, 185, 0.5);
+}
+
+#earned-spend-kart .circular-progress-bar svg {
+    transform: rotate(-66deg);
+}
+
+#earned-spend-kart .circular-progress-bar svg circle {
+    transform: translate(15px, 15px);
+    stroke-dasharray: 330px;
+    stroke-dashoffset: 0px;
+}
+
+#earned-spend-kart .circular-progress-bar svg circle:nth-child(1) {
+    stroke: #f3f3f3;
+}
+
+#earned-spend-kart .circular-progress-bar svg circle:nth-child(2) {
+    stroke-dasharray: calc(+330 - (330 * 66) / 100);
+    stroke: #3b56f0;
+}
+
+#earned-spend-kart .circular-progress-bar .progress-percent {
+    width: 2.3rem;
+    height: 2.2rem;
+    top: 35px;
+    left: 125px;
+    border: solid 4.5px #d0d7ff;
+}
+
+#earned-spend-kart .spend-earn {
+    color: #2d397d;
+}
+
+#earned-spend-kart .spend-earn div {
+    height: 1rem;
+}
+
+#earned-spend-kart .spend-earn .spend-color,
+#earned-spend-kart .spend-earn .earn-color {
+    width: 0.8rem;
+    height: 0.8rem;
+    background: #f3f3f3;
+}
+
+#earned-spend-kart .spend-earn .earn-color {
+    background: #3b56f0;
+}
+
+#revenue-transaction {
+    width: 96%;
+}
+
+#revenue-transaction #revenue,
+#revenue-transaction #transaction {
+    background-color: transparent;
+    color: #2d397d;
+}
+
+.icons-div {
+    background-color: #d0d7ff;
+    width: 3rem;
+    height: 3rem;
+}
+
+.spotify-icon {
+    color: #1ea03a;
+}
+
+.bca-transfer-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: #3547ac;
+}
+
+.bca-transfer-profit-loss {
+    color: #6f5fa5;
+}
+
+@media (max-width:767px) {
+    .navbar-main-div {
+        width: 16%;
+    }
+    .overview {
+        width: 90%;
+    }
+    .navbar-main-div.active {
+        width: 38%;
+    }
+    .overview.active2 {
+        width: 62%;
+    }
+}
